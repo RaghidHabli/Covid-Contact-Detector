@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane id="mainPane" prefHeight="399.0" prefWidth="413.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.registerController">
+   <children>
+      <Label layoutX="187.0" layoutY="31.0" text="Register" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="firstnameid" layoutX="147.0" layoutY="82.0" prefHeight="31.0" prefWidth="203.0" promptText="FirstName" style="-fx-background-color: white;" unFocusColor="#ff1616" />
+      <JFXTextField fx:id="lastnameid" layoutX="147.0" layoutY="140.0" prefHeight="31.0" prefWidth="203.0" promptText="LastName" style="-fx-background-color: white;" unFocusColor="RED" />
+      <Label layoutX="147.0" layoutY="297.0" prefHeight="44.0" prefWidth="144.0" text="Current Health Status:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="passwordid" layoutX="148.0" layoutY="251.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="RED" />
+      <JFXButton layoutX="142.0" layoutY="341.0" onAction="#submit" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: blue;" text="Submit" textFill="WHITE" />
+      <JFXTextField fx:id="emailid" layoutX="147.0" layoutY="200.0" prefHeight="31.0" prefWidth="203.0" promptText="Email" style="-fx-background-color: white;" unFocusColor="RED" />
+      <JFXToggleButton fx:id="healthyid" layoutX="288.0" layoutY="289.0" onAction="#healthyaction" text="Healthy" textFill="#00ff44" />
+      <JFXButton layoutX="37.0" layoutY="16.0" onAction="#Back" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE" />
+   </children>
+</Pane>

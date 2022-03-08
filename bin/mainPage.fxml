@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GuiAppController">
+   <children>
+      <Pane layoutX="229.0" layoutY="59.0" prefHeight="415.0" prefWidth="360.0" style="-fx-background-color: #000000; -fx-background-radius: 40px;">
+         <effect>
+            <DropShadow color="#9e9e9e" />
+         </effect>
+         <children>
+            <Label layoutX="87.0" layoutY="56.0" text="Corona Detector">
+               <font>
+                  <Font name="SansSerif Regular" size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#dbd3e6" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXPasswordField fx:id="passwordid" labelFloat="true" layoutX="93.0" layoutY="273.0" maxWidth="215.0" minWidth="196.0" prefHeight="31.0" prefWidth="215.0" promptText="Password" unFocusColor="#f8f6f6">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="352.0" onAction="#Register" prefHeight="37.0" prefWidth="110.0" ripplerFill="#ececee" style="-fx-background-color: #4bbdeb; -fx-background-radius: 50px;" text="Register" textFill="WHITE" />
+            <JFXTextField fx:id="firstnameid" focusColor="WHITE" labelFloat="true" layoutX="94.0" layoutY="163.0" promptText="FirstName" unFocusColor="#f8f8f8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="34.0" layoutY="168.0">
+               <image>
+                  <Image url="@../../eclipse%20new%20workspace/CarServiceCompanyProject/src/application/unauthorized-person.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="34.0" layoutY="284.0">
+               <image>
+                  <Image url="@../../eclipse%20new%20workspace/CarServiceCompanyProject/src/application/key.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="225.0" layoutY="352.0" onAction="#NormalUserLogin" prefHeight="37.0" prefWidth="110.0" ripplerFill="#ececee" style="-fx-background-color: #4bbdeb; -fx-background-radius: 50px;" text="Launch" textFill="WHITE" />
+            <JFXTextField fx:id="lastnameid" focusColor="WHITE" labelFloat="true" layoutX="94.0" layoutY="219.0" promptText="LastName" unFocusColor="#f8f8f8">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="34.0" layoutY="224.0">
+               <image>
+                  <Image url="@../../eclipse%20new%20workspace/CarServiceCompanyProject/src/application/unauthorized-person.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="142.0" layoutY="113.0" text="Login ">
+               <font>
+                  <Font name="SansSerif Regular" size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#dbd3e6" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+          
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
