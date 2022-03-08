@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.interfaceController">
+   <children>
+      <Pane id="mainPane" layoutX="207.0" layoutY="-106.0" prefHeight="517.0" prefWidth="793.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="331.0" layoutY="14.0" text="Welcome " textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="170.0" layoutY="417.0" onAction="#addNewContact" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: blue;" text="Add new contact" textFill="WHITE" />
+            <JFXButton layoutX="340.0" layoutY="417.0" onAction="#goToEmergency" prefHeight="44.0" prefWidth="160.0" style="-fx-background-color: blue;" text="Emergency Center" textFill="WHITE" />
+            <Label layoutX="317.0" layoutY="61.0" text="How may i help you?" textFill="WHITE" />
+            <JFXButton layoutX="6.0" layoutY="417.0" onAction="#check" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: blue;" text="Check Contacts" textFill="WHITE" wrapText="true" />
+            <GridPane layoutX="22.0" layoutY="96.0" prefHeight="272.0" prefWidth="683.0">
+               <children>
+                  <TableView id="main-style.css" fx:id="table" prefHeight="160.0" prefWidth="384.0" style="-fx-border-color: blue;">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="col_firstname" prefWidth="101.0" text="First Name" />
+                        <TableColumn fx:id="col_lastname" prefWidth="123.0" text="Last Name" />
+                        <TableColumn fx:id="col_date" prefWidth="123.0" text="Date of Contact" />
+                        <TableColumn fx:id="col_health" prefWidth="123.0" style="-fx-text-inner-color: red;" text="Health Status" />
+                     </columns>
+                  </TableView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="347.0" minHeight="10.0" prefHeight="271.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <JFXButton layoutX="22.0" layoutY="14.0" onAction="#Back" prefHeight="21.0" prefWidth="88.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE" wrapText="true" />
+            <JFXTextField fx:id="info" editable="false" layoutX="550" layoutY="467.0" prefHeight="36.0" prefWidth="294.0" style="-fx-text-inner-color: #01ff34;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="info1" editable="false" layoutX="550" layoutY="421.0" prefHeight="36.0" prefWidth="286.0" style="-fx-text-inner-color: #01ff34;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

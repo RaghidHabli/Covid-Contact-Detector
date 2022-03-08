@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.newcontactController">
+   <children>
+      <Pane id="rootPane" layoutX="207.0" layoutY="110.0" prefHeight="400.0" prefWidth="469.0" style="-fx-background-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="146.0" layoutY="26.0" text="Add a new contact" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="firstnameid" layoutX="147.0" layoutY="82.0" prefHeight="31.0" prefWidth="203.0" promptText="FirstName" style="-fx-background-color: white;" unFocusColor="#ff1616" />
+            <JFXTextField fx:id="lastnameid" layoutX="147.0" layoutY="140.0" prefHeight="31.0" prefWidth="203.0" promptText="LastName" style="-fx-background-color: white;" unFocusColor="RED" />
+            <JFXButton layoutX="190.0" layoutY="311.0" onAction="#submit" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: blue;" text="Submit" textFill="WHITE" />
+            <DatePicker fx:id="date" layoutX="164.0" layoutY="200.0" prefHeight="31.0" prefWidth="188.0" />
+            <Label layoutX="106.0" layoutY="171.0" prefHeight="89.0" prefWidth="73.0" text="Date of Contact" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="14.0" layoutY="14.0" onAction="#back" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: blue;" text="Back" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
